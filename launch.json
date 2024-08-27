@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(lldb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/main",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "build",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for lldb",
+                    "ignoreFailures": true,
+                    "text": "settings set -- target.language c++"
+                }
+            ],
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}
